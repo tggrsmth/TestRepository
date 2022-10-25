@@ -8,5 +8,5 @@ Call the api using:  https://localhost:5001/api/robots/closest?robotId=58?distan
 
 Curl Statement to hit my new api:
 curl -X POST https://localhost:5001/api/robots/closest
-   -H 'Content-Type: application/json'
+   -H 'Content-Type:application/json'
    -d '{"robotId":58,"distanceToGoal":49,"batteryLevel":30}'
