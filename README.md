@@ -10,3 +10,6 @@ Curl Statement to hit my new api:
 curl -X POST http://localhost:5001/api/robots/closest
    -H 'Content-Type:application/json'
    -d '{loadId:231,x:5,y:3}'
+
+Passing those values as url parameters to the Curl statement:
+curl -X POST "http://localhost:5001/api/robots/closest?loadId=231?x=5?y=3" -H 'Content-Type:application/json'
