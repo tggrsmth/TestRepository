@@ -12,7 +12,9 @@ curl -X POST http://localhost:5001/api/robots/closest
 Passing those values as url parameters to the Curl statement:
 curl -X POST "http://localhost:5001/api/robots/closest?loadId=231&x=5&y=3" -H 'Content-Type:application/json'
 
-API returns: {"robotId":"4","batteryLevel":37,"distanceToGoal":5}  //location of the closest robot
+API returns for the curl statement above: {"robotId":"4","batteryLevel":37,"distanceToGoal":5}  //location of the closest robot
 
 I did not code the final portion of this assignment due to time restrictions.  To find all robots within 10 units of the load, use the filter function in Javascript
 to filter all robotIds within a value of 10 units or less for the distanceToGoal field.  Sort the resulting robotId array by batteryLevel and then return the last index element of that object array.
+
+I decided to code the Post REST API in Node.js using the Express module.  I also use fetch to access mockapi.io/robots.  To run my API, install Node, Express, and the node-fetch-commonjs module, create a directory, and install the files above.  My api is located in server.js so run node server.js from the directory where you installed the files to start the node server and load the code.
