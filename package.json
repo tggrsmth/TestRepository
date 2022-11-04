@@ -1,0 +1,27 @@
+{
+  "name": "robotlocationrestapi",
+  "version": "1.0.0",
+  "description": "Rest api for robot location",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tggrsmth/TestRepository.git"
+  },
+  "author": "davemsmith",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tggrsmth/TestRepository/issues"
+  },
+  "homepage": "https://github.com/tggrsmth/TestRepository#readme",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "express": "^4.18.2",
+    "node-fetch": "^3.2.10",
+    "node-fetch-commonjs": "^3.2.4",
+    "urlencoded-parser": "^1.0.0"
+  }
+}
